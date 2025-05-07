@@ -12,7 +12,7 @@ hal_attribute_service(vendor_hal_oplus_charger, hal_oplus_charger_aidl_service)
 
 allow vendor_hal_oplus_charger_client hal_oplus_charger_aidl_service:service_manager find;
 
-allow hal_oplus_charger_aidl hal_oplus_charger_aidl:netlink_kobject_uevent_socket { create read };
+allow hal_oplus_charger_aidl hal_oplus_charger_aidl:netlink_kobject_uevent_socket { create read setopt };
 
 allow hal_oplus_charger_aidl vendor_reserve_partition:blk_file rw_file_perms;
 

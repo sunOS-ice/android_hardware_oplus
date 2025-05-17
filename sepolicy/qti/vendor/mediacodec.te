@@ -1,1 +1,5 @@
+hal_client_domain(mediacodec, vendor_hal_dms)
+
+binder_call(mediacodec, vendor_hal_dms_default)
+
 set_prop(mediacodec, vendor_video_prop)

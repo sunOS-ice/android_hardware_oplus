@@ -1,5 +1,9 @@
 hal_client_domain(hal_audio_default, vendor_hal_oplus_charger)
 
+hal_client_domain(hal_audio_default, vendor_hal_dms)
+
+binder_call(hal_audio_default, vendor_hal_dms_default)
+
 allow hal_audio_default mnt_vendor_file:file r_file_perms;
 
 allow hal_audio_default vendor_sysfs_wireless:dir search;

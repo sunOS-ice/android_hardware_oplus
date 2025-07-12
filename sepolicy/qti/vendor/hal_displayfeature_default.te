@@ -1,3 +1,6 @@
+type hal_displayfeature_default, domain;
+type hal_displayfeature_default_exec, exec_type, file_type, vendor_file_type;
+
 allow hal_displayfeature_default hal_oplus_touch_aidl_service:service_manager find;
 binder_call(hal_displayfeature_default, servicemanager)
 binder_call(hal_displayfeature_default, hal_oplus_touch_aidl)
